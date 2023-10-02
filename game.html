@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Interactive Quiz</title>
+</head>
+<body>
+    <p id="timer"> <span id="countdown">25</span></p>
+
+    <div class="quiz-container">
+        <div class="question-container">
+            <p id="question">Question 1: What is the capital of France?</p>
+            <ul id="options">
+                <li><label><input type="radio" name="answer" value="A">A. London</label></li>
+                <li><label><input type="radio" name="answer" value="B">B. Berlin</label></li>
+                <li><label><input type="radio" name="answer" value="C">C. Madrid</label></li>
+                <li><label><input type="radio" name="answer" value="D">D. Paris</label></li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+        <p id="feedback"></p>
+        <p id="score">Score: 0</p>
+        <button id="next" style="display: none;">Next</button>
+    </div>
+    <script src="game.js"></script>
+    <button id="play-again" style="display: none;">Play Again</button>
+
+</body>
+</html>
