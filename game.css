@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.question-container p {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #101820;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.question-container {
+    text-align: left;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#options li {
+    list-style: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#options li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+#options li label {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3fe13a;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#options li label:hover {
+    background-color: #3fe13a;
+    transform: scale(1.02);
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #3fe13a;
+    font-size: 18px;
+}
+
+#score {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#quiz-ending {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #28a745; /* Green color for the quiz ending message */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #6ff36b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #22d233;
+    transform: scale(1.02);
+}
+
+#next {
+    background-color: #28a745;
+    display: none;
+}
+
+#next:hover {
+    background-color: #1e7e34;
+    transform: scale(1.02);
+}
+.question-container {
+    transition: transform 0.5s ease;
+  }
+  
+  /* Slide in from the right */
+  .question-container.enter {
+    transform: translateX(0);
+  }
+  
+  /* Slide out to the left */
+  .question-container.exit {
+    transform: translateX(-100%);
+  }
+
+  #timer {
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    color: #0b0b0b;
+    background-color: #f5f7f9;
+    padding: 2px;
+    border-radius: 10px;
+  
+    text-align: right;
+    animation: pulse 1s infinite alternate;
+  }
